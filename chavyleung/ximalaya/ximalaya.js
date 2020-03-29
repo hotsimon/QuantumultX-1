@@ -12,7 +12,8 @@ let VAL_signcookie = chavy.getdata(KEY_signcookie)
   // await browseapp()
   await getacc()
   showmsg()
-})().catch((e) => chavy.log(`❌ ${cookieName} 签到失败: ${e}`))
+  chavy.done()
+})().catch((e) => chavy.log(`❌ ${cookieName} 签到失败: ${e}`), chavy.done())
 
 function signapp() {
   return new Promise((resolve, reject) => {
@@ -117,7 +118,7 @@ function showmsg() {
   if (signinfo.info.isTickedToday == false) {
     if (signinfo.signapp == 'true') {
       subTitle = '签到: 成功'
-      detail = `共签: ${signinfo.totalCheckedCounts + 1}天, 积分: ${signinfo.acc.data.score}(+${signinfo.info.awardAmount})`
+      detail = `共签: ${signinfo.info.totalCheckedCounts + 1}天, 积分: ${signinfo.acc.data.score}(+${signinfo.info.awardAmount})`
     } else {
       subTitle = '签到: 失败'
       detail = `说明: ${signinfo.signapp}`

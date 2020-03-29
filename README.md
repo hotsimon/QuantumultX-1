@@ -6,6 +6,8 @@
 
 * 只测试自用脚本，其他大部分脚本未测试可用性.
 
+* 更新通知[频道](https://t.me/nzw9314News)
+
 ### 全局配置：
 
 * [QuantumultX.conf](https://raw.githubusercontent.com/nzw9314/QuantumultX/master/QuantumultX.conf)
@@ -16,25 +18,26 @@
 * 建立本地文件夹
 目录 iCloud Drive/QuantumultX/Scripts/nzw9314 或者 我的iPhone/QuantumultX/Scripts/nzw9314
 
-* [WoringCopy挂载我的仓库](https://github.com/nzw9314/QuantumultX.git)
+* WoringCopy挂载我的[仓库](https://github.com/nzw9314/QuantumultX.git)
 
-* [挂载视频教程](https://m.youtube.com/watch?t=3s&v=inCQFnDmRLo)
+* 挂载[视频教程](https://m.youtube.com/watch?t=3s&v=inCQFnDmRLo)
 
-* [Js_local_WorkingCopy.conf](https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Js_local_WorkingCopy.conf) 脚本订阅,在QuantumultX重写中添加订阅.
+* [Js_local_WorkingCopy.conf](https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Js_local_WorkingCopy.conf) 脚本订阅.
 
-* [Js_Local_WorkingCopy_Cookie.conf](https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Js_Local_WorkingCopy_Cookie.conf) 商店版1.05,获取Cookie,在QuantumultX重写中添加订阅.
+* [Js_Local_WorkingCopy_Cookie.conf](https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Js_Local_WorkingCopy_Cookie.conf) 获取Cookie订阅,适用于商店版v1.0.5-build192
 
-* [Get_Cookie_New.conf](https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_New.conf) 获取Cookie,适用于TF版,在QuantumultX重写中添加订阅.
+* [Get_Cookie_New.conf](https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_New.conf) 获取Cookie,商店版及TFv1.0.6-build212+
 
-* 以上获取Cookie根据版本二选一,平时向右滑动禁用,仅在Cookie获取或失效时启用.
+* 获取Cookie订阅根据QuantumultX版本二选一,仅在Cookie获取或失效时启用,不需要时右滑动禁用.
 
 * [Task_Local.conf](https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task_Local.conf) 定时任务配置,目前无法订阅,请手动根据个人需求复制内容及修改时间.
 
 ### 远程配置：
+* [视频教程](https://youtu.be/tr5aji82Vks)
 
 * [Js.conf](https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Js.conf) 脚本远程订阅
 
-* [Get_Cookie_Remote.conf](https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_Remote.conf) Cookie获取远程订阅
+* [Get_Cookie_Remote.conf](https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Get_Cookie_Remote.conf) 获取Cookie远程订阅,仅在Cookie获取或失效时启用,不需要时右滑动禁用.
 
 * [Task_Remote.conf](https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task_Remote.conf) 定时任务远程配置,目前无法订阅,请手动根据个人需求复制内容及修改时间
 

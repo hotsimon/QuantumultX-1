@@ -20,7 +20,8 @@ let VAL_signheader = chavy.getdata(KEY_signheader)
     await luckyapp()
   }
   showmsg()
-})().catch((e) => chavy.log(`❌ ${cookieName} 签到失败: ${e}`))
+  chavy.done()
+})().catch((e) => chavy.log(`❌ ${cookieName} 签到失败: ${e}`), chavy.done())
 
 function loginapp() {
   return new Promise((resolve, reject) => {
@@ -152,7 +153,7 @@ function showmsg() {
     subTitle += `; 抽奖次数: ${signinfo.lucky.data.drawTimes}`
     detail += `\n查看抽奖详情\n`
     for (let i = 0; i < signinfo.luckylist.length; i++) {
-      const can_draw = signinfo.luckylist[i].can_draw
+      const can_draw = signinfo.luckylist[i].data.can_draw
       if (can_draw) detail += `\n抽奖 ${i + 1}: ${signinfo.luckylist[i].data.title}`
       else detail += `\n抽奖 ${i + 1}: ${signinfo.luckylist[i].data.msg}`
     }
